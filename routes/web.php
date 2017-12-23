@@ -18,4 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
 Route::get('/clubs/{club}', 'ClubsController@show');
+
+Route::get('/players/{player}', 'PlayersController@show');
+
